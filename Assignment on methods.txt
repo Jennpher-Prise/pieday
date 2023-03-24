@@ -1,0 +1,41 @@
+ import java.util.Scanner;
+ class CalculateG {
+    public static double multiplication(){
+        int numberOne;
+        int numberTwo;
+        int multiplactionAnswer;
+
+        Scanner multiplicationinput = new Scanner(System.in);
+        System.out.println("enter numberone");
+        numberOne=multiplicationinput.nextInt();
+        System.out.println("enter numbertwo");
+        numberTwo =multiplicationinput.nextInt();
+    }
+
+     Static void outline(String message,double results){ 
+        System.out.println(message+results);
+    } 
+    public static void main(String[] arguments){
+    double gravity = -9.81; // Earth's gravity in m/s^2
+    int fallingTime = 30;
+    double initialVelocity = 0.0;
+    double finalVelocity ;
+    double initialPosition = 0.0;
+    double finalPosition ;
+    
+    finalPosition=(0.5*gravity*(fallingTime*fallingTime)+initialVelocity*fallingTime+initialPosition)/fallingTime;
+    finalVelocity=gravity*((fallingTime)+initialVelocity)/fallingTime;
+
+    
+    // Add the formulas for position and velocity
+    System.out.println("The object's position after " + fallingTime + " seconds is "
+    + finalPosition + " m.");
+    // Add output line for velocity (similar to position
+    System.out.println("the object's velocity after"+ fallingTime +"seconds is "+ finalVelocity +"m/s"); 
+     
+
+
+
+   // a is gravity,t is fallingtime ,v is finalVelocity ,x is finalPosition, xi is intial position , vi is intial velocity.
+    }
+    } 
